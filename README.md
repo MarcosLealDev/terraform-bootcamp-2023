@@ -1,23 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
-I have skiped all the gitpod configuration
+![architectural-diagram](https://github.com/omenking/terraform-beginner-bootcamp-2023/assets/7776/ab015431-2d14-4910-aa37-be4807b2b905)
 
-## Terraform Basics
 
-### Terraform Registry
+## Weekly Journals
+- [Week 0 Journal](journal/week0.md)
+- [Week 1 Journal](journal/week1.md)
 
-Terraform sources their providers and modules from the Terraform registry which is located at [registry.terraform.io](https://registry.terraform.io/)
-
-- **Providers** is an interface to APIs that will allow you to create resorces in Terraform
-- **Modules** are away to refactor or to make large amount of terraform code modular, portable and sharable.
-
-#### Sequence of Terraform commands
-```
-terraform init
-terraform plan
-terraform apply --auto-approve
-```
-And to delete 
-```
-terraform destroy
-```
+## Extras
+- [Github Markdown TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
