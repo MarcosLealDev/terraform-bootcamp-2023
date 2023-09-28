@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023
 
-I have skiped all the 
+I have skiped all the gitpod configuration
 
 ## Terraform Basics
 
