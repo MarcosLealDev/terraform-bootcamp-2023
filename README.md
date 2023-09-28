@@ -17,3 +17,7 @@ terraform init
 terraform plan
 terraform apply --auto-approve
 ```
+And to delete 
+```
+terraform destroy
+```
