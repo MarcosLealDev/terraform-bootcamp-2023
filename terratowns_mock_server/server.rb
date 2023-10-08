@@ -9,7 +9,13 @@ class Home
   include ActiveModel::Validations
   attr_accessor :town, :name, :description, :domain_name, :content_version
 
-  validates :town, presence: true
+  validates :town, presence: true, inclusion: { in: [
+    'cooker-cove',
+    'melomaniac-mansion',
+    'video-valley',
+    'the-nomad-pad',
+    'gamers-grotto'
+  ]} 
   validates :name, presence: true
   validates :description, presence: true
   validates :domain_name, 
@@ -69,8 +75,8 @@ class TerraTownsMockServer < Sinatra::Base
 
   # CREATE
   post '/api/u/:user_uuid/homes' do
-    ensure_correct_headings
-    find_user_by_bearer_token
+    ensure_correct_headings()
+    find_user_by_bearer_token()
     puts "# create - POST /api/homes"
 
     begin
